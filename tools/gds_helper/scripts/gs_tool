@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Find python
+python=$( which python || which python3 ) || die "Python not found"
+
+$python gds_simulator.py 

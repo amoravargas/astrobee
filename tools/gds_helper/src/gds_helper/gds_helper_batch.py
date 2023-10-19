@@ -1,4 +1,8 @@
-#!/usr/bin/env python
+#!/bin/sh
+"""":
+pybin=$( which python || which python3 ) || { echo >&2 "Python not found"; exit 1; }
+exec $pybin "$0" "$@"
+"""  # "
 
 import os
 import shlex
